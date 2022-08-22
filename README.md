@@ -1,25 +1,11 @@
-# fluentd
+# fluent
 
-fluentdのプラグインのインストール、設定について
+fluentのプラグインのインストール、設定については[Dockerfile](./Dockerfile)を参照してください。
 
-## プラグインのインストール
-
-SodiumServerを使用するために、fluentdに out-http、geoip、anonymizer、record-modifier プラグインをインストールします。
-
-      $ apt install build-essential
-      $ apt install libgeoip-dev
-      $ apt install geoip-database
-      $ apt install libgeoip-dev
-      $ apt install libmaxminddb-dev
-
-      $ td-agent-gem install fluent-plugin-out-http
-      $ td-agent-gem install fluent-plugin-geoip
-      $ td-agent-gem install fluent-plugin-anonymizer
-      $ td-agent-gem install fluent-plugin-record-modifier
 
 ## 設定
 
-[td-agent.conf](td-agent.conf) を参照
+[fluent.conf](./fluent.conf) を参照
 
 ## MaxMind DB の結果について
 
