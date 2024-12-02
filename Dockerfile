@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v1.17-debian-1@sha256:99e4bb4fae5fa19b162abb2a812d3eb5f16614509f948f86590bc858e37fc9fb
+FROM fluent/fluentd:v1.18-debian-1@sha256:ed56cae68a593c7dd2ca5b5af260783460bec108ff964153d599ab73fa0098bf
 USER root
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
